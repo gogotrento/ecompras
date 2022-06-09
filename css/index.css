@@ -4,13 +4,6 @@ header {
     z-index: 99999999;
 }
 
-.logo {
-    font-family: 'Quicksand', sans-serif;
-    padding-right: 0%;
-    color: white;
-    cursor: pointer;
-}
-
 .nav-link {
     text-decoration: none;
     padding: 18px;
