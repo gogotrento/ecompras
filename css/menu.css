@@ -1,0 +1,11 @@
+header {
+    background-color: #8f94fb;
+    padding: 18px;
+    z-index: 99999999;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 18px;
+    color: white !important;
+}
