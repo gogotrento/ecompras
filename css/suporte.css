@@ -1,6 +1,11 @@
 body{
     background:#4e54c8 !important;
 }
+h1 {
+    font-family: 'Lato' sans-serif !important;
+    text-align: center !important;
+    color: white !important;
+}
 .btn{
     background-color:#8f94fb !important;
 }
