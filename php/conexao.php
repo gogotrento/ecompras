@@ -1,7 +1,9 @@
 <?php
-define('HOST', '127.0.0.1');
-define('usuario', 'root');
-define('senha', '');
-define('DB', 'login');
+$server= '127.0.0.1';
+$usuario = 'root';
+$senha = '';
+$banco ='login';
 
-$conexao = mysqli_connect('HOST', 'usuario', 'senha', 'DB') or die('Não foi possivel conectar');
+$conexao = new PDO("mysqli_connect:host=$servidor;dbname=$banco",$usuario,$senha);
+
+?>
