@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/suporte.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/background.css">
     <link rel="stylesheet" href="../css/menu.css">
     <script src="https://kit.fontawesome.com/dc9a30c3ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,7 +27,7 @@
                 <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./home.html">Ir as compras</a>
+                <a class="nav-link" href="home.php">Ir as compras</a>
             </li>
             <li class="nav-itemdrop">
                 <div class="dropdown">
@@ -42,26 +43,62 @@
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Suporte</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Falar conosco</a></li>
-                        <li><a class="dropdown-item" href="../php/contatos.php">Contatos</a></li>
+                        <li><a class="dropdown-item" href="#">Contatos</a></li>
                     </ul>
                 </div>
             </li>
         </ul>
     </div>
 </header>
+
 <body>
-    <div class="title">
-        <h1 class="title-center">Bem-vindo ao suporte!</h1>
-        <p class="title-left-1">Tentaremos resolver o seu problema mais breve possível, ao lado tem as perguntas mais frequentes que pode ser a sua também, para essas perguntas temos um passo a passo de como resolver.</p>
-        <p class="title-left-2">Se seu problema não estiver em nenhuma das opções, pediremos para você entrar em contato conosco para estaremos resolvendo isso com nossos atendentes preparados para resolver qualquer problema.</p>
+    <div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
-    <section class="box-option"  data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"> 
-    <div class="box-1">Esqueci a senha<a class="fa-solid fa-angle-right"></a>
-            <p class="release-note">Ultima atualização desse artigo 02/01/2006 02:43</p>
+    <section class="bem-vindo">
+        <div class="welcome">
+            Ecompras
         </div>
-        <div class="box-2"  data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"  >
-            <div class="text-1">Meu pagamento não está sendo autorizado <a class="fa-solid fa-angle-right"></a>
-                <p class="release-note">Ultima atualização desse artigo 02/01/2006 02:43</p>
+        <div class="text-1">
+            Seja bem vindo ao ecompras!
+        </div>
+        <button class="button" href="../html/home.html">Ir as compras</button>
+    </section>
+    <section class="scroll-animation">
+        <div class="container">
+            <div class="boxs">
+                <div class="box-1" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <h1 class="tempo">Tempo</h1>
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Cada segundo do seu tempo é valioso para nós, faça suas compras o mais rapido que for preciso</p>
+
+                </div>
+                <div class="box-2" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <h1>Dinheiro</h1>
+                    <i class="fa-solid fa-money-bill"></i>
+                    <p>Aqui seu dinheiro renderá muito mais em que um mercado comum!</p>
+                </div>
+                <div class="box-3" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <h1>Cadastro</h1>
+                    <a class="fa-solid fa-right-to-bracket" href="./index.html"></a>
+                    <p>Com uma conta cadastrada adianta muito suas compras, com muitos beneficios</p>
+                </div>
+                <div class="box-4" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <h1>Suporte</h1>
+                    <a class="fa-solid fa-headset" href="../php/suporte.php"></a>
+                    <p>No suporte iremos resolver qualquer problema que você tiver em suas compras!</p>
+                </div>
             </div>
         </div>
     </section>
@@ -72,6 +109,7 @@
     <script src="../js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

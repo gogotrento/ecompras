@@ -3,11 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/contatos.css">
     <link rel="stylesheet" href="../css/menu.css">
     <script src="https://kit.fontawesome.com/dc9a30c3ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -51,56 +49,29 @@
         </ul>
     </div>
 </header>
-
 <body>
-    <div>
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <div class="title">
+        <h1>Contatos</h1>
+            <p>Abaixo estão os contatos que você poderá entrar em contato conosco</p>
     </div>
-    <section class="bem-vindo">
-        <div class="welcome">
-            Ecompras
+    <section class="contatos">
+        <div class="whatsapp" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-brands fa-whatsapp"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://api.whatsapp.com/send?phone=5548984544335" class="dropdown-item">Contato 1</a></li>
+                        </ul>
+                    </div>
+                </li>
         </div>
-        <div class="text-1">
-            Seja bem vindo ao ecompras!
+        <div class="emails" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <a class="fa-solid fa-envelope"></a>
         </div>
-        <button class="button" href="../html/home.html">Ir as compras</button>
-    </section>
-    <section class="scroll-animation">
-        <div class="container">
-            <div class="boxs">
-                <div class="box-1" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
-                    <h1 class="tempo">Tempo</h1>
-                    <i class="fa-solid fa-clock"></i>
-                    <p>Cada segundo do seu tempo é valioso para nós, faça suas compras o mais rapido que for preciso</p>
-
-                </div>
-                <div class="box-2" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
-                    <h1>Dinheiro</h1>
-                    <i class="fa-solid fa-money-bill"></i>
-                    <p>Aqui seu dinheiro renderá muito mais em que um mercado comum!</p>
-                </div>
-                <div class="box-3" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
-                    <h1>Cadastro</h1>
-                    <a class="fa-solid fa-right-to-bracket" href="./index.html"></a>
-                    <p>Com uma conta cadastrada adianta muito suas compras, com muitos beneficios</p>
-                </div>
-                <div class="box-4" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
-                    <h1>Suporte</h1>
-                    <a class="fa-solid fa-headset" href="../php/suporte.php"></a>
-                    <p>No suporte iremos resolver qualquer problema que você tiver em suas compras!</p>
-                </div>
-            </div>
+        <div class="instagram" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <a class="fa-brands fa-instagram"></a>
+        </div>
+        <div class="facebook" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <a class="fa-brands fa-facebook"></a>
         </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -110,7 +81,6 @@
     <script src="../js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
 </body>
-
 </html>
+
