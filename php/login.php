@@ -62,6 +62,7 @@
                 <div class="logo">
                     <h1>Ecompras</h1>
                 </div>
+            <div class="email">
                 <label>E-mail</label>
                     <input type="text" class="input-email">
             </div>
