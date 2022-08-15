@@ -1,0 +1,85 @@
+.main-cadastro{
+    font-family: Tahoma !important;
+    color: white;
+    padding: 20px;
+    width: 80%;
+    height: 30rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+ h1{
+    color: black;
+ }
+
+ input:hover{
+    background-color: white;
+    border-color: black;
+ }
+
+ input:active{
+    border-color: black;
+ }
+ 
+ .email{
+    width: 55vw;
+    border-color: white;
+    background-color: white;
+    color: black;
+    background-attachment: fixed;
+  }
+
+  .tel{
+    width: 55vw;
+    border-color: white;
+    background-color: white;
+    color: black;
+    background-attachment: fixed;
+  }
+
+  .name{
+    width: 55vw;
+    border-color: white;
+    background-color: white;
+    color: black;
+    background-attachment: fixed;
+  }
+  
+  .senha{
+    width: 55vw;
+    border-color: white;
+    background-color: white;
+    color: black;
+    background-attachment: fixed;
+  }
+  
+  .senha2{
+      width: 55vw;
+      border-color: white;
+      background-color: white;
+      color: black;
+      background-attachment: fixed;
+  }
+  
+  input::placeholder {
+    color: black;
+  }
+
+  .erro {
+    display: block;
+    margin-top: 15px;
+    color: red;
+  }
+    
+  input.invalido {
+    width: 65vw;
+    border-color: red;
+    background-color: white;
+    color: black;
+    background-attachment: fixed;
+    border: 1px solid red;
+    border-radius: 5px;
+  }
+
