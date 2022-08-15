@@ -19,31 +19,6 @@ require('db/conexao.php');
 
 
 </head>
-
-<!DOCTYPE html>
-<html lang="pt">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/menu.css">
-    <script src="https://kit.fontawesome.com/dc9a30c3ce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap');
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>ecompras</title>
-</head>
-
 <header>
     <div class="menu">
         <ul class="nav nav-pills">
@@ -81,26 +56,23 @@ require('db/conexao.php');
 ?>
 
 <body>
-
-    <br><br>
-    <center>
     <div class="main-cadastro">
     <form method="post">
         <br>
         <h1>Cadastro</h1>
-        <img class="name-image" src="https://cdn.pixabay.com/photo/2017/02/25/22/04/user-icon-2098873_960_720.png" height="30rem" width="35vw">
+        <i class="fa-solid fa-user"></i>
         <input type="text" class="name" name="nome" placeholder="Digite seu nome">
         <span class="erro"></span>
 
-        <img class="email-image" src="https://cdn-icons-png.flaticon.com/512/39/39547.png" height="30rem" width="35vw">
+        <i class="fa-solid fa-envelope"></i>
         <input type="email" class="email" name="email" placeholder="Digite seu email">
         <span class="erro"></span>
 
-        <img class="tellphone-image" src="https://cdn-icons-png.flaticon.com/512/126/126341.png" height="30rem" width="35vw">
+        <i class="fa-solid fa-phone"></i>
         <input type="tel" class="tel" name="tel" placeholder="Digite seu número com ddd" data-mask="(00) 0000-0000">
         <span class="erro"></span>
 
-        <img class="password-image" src="https://cdn-icons-png.flaticon.com/512/181/181534.png" height="30rem" width="35vw">
+        <i class="fa-solid fa-lock"></i>
         <input type="password" class="senha" name="senha" placeholder="Digite sua senha">
         <span class="erro"></span>
 
@@ -130,15 +102,23 @@ require('db/conexao.php');
 
 
  
-    if ($nome=="" || $nome==null){
+    if ($nome==""){
         echo"<b style='color:red'>Campo nome Inválido!</b>";
         exit();
     }
+    
+    if ($nome==null){
+        echo"Preencha Esse Campo!";
+        exit();
 
-    if ($email=="" || $email==null){
+    if ($email==""){
         echo "<b style='color:red'>Campo email Inválido!</b>";
         exit();
     }
+    
+    if ($email==null){
+        echo "Preencha este campo!";
+        exit();
 
     if ($tel=="" || $tel==null){
         echo "<b style='color:red'>Campo email Inválido!</b>";
@@ -151,7 +131,7 @@ require('db/conexao.php');
     }
 
     if ($senha2=="" || $senha2==null){
-        echo "<b style='color:red'>Campo repetição de senhaInválido!</b>";
+        echo "<b style='color:red'>Repita a senha corretamente!</b>";
         exit();
     }
     
@@ -184,17 +164,7 @@ require('db/conexao.php');
         echo "<b style='color:red'>A senha precisa ter 6 dígitos!</b>";
         exit();
     }
-
-    if(strlen($senha2) > 6){
-        echo "<b style='color:red'>A senha precisa ter 6 dígitos!</b>";
-        exit();
-    }
-
-    if(strlen($senha2) < 6){
-        echo "<b style='color:red'>A senha precisa ter 6 dígitos!</b>";
-        exit();
-    }
-
+        
     if($senha !== $senha2){
         echo "<b style='color:red'>As senhas não considem!</b>";
         exit();
@@ -209,10 +179,6 @@ require('db/conexao.php');
     ?>
 
     </form> 
-    </center>
-    <br>
-
     </div>
-
 </body>
 </html>
