@@ -1,4 +1,5 @@
+/* Botar sempre a tag !important por causa do bootstrap*/
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px !important;
+    margin: 0px !important;
 }

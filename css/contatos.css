@@ -1,0 +1,86 @@
+body{
+    background-color: #4c58c8 !important;
+}
+.title>h1{
+    color: white !important;
+    font-family: 'Open-Sans' sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+.title>p{
+    color: white;
+    text-align: center;
+}
+.dropdown-menu{
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+}
+.dropdown-item{
+    color: white !important;
+}
+.dropdown-item:focus,.dropdown-item:hover{
+    background-color: #4c58c8 !important;
+}
+.whatsapp{
+    margin-left: 30%;
+    margin-top: 37px;
+}
+.fa-whatsapp{
+    font-size: 30px;
+    text-align: center;
+}
+.emails{
+    margin-left: 65%;
+    position: absolute;
+    top: 35%;
+    display: inline-flexbox;
+}
+.fa-envelope{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+}
+.fa-envelope:hover{
+    color: #8f94fb;
+    cursor: pointer;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+.instagram{
+    margin-left: 31%;
+    position: absolute;
+    top: 80%;
+    display: inline-flexbox;
+}
+.fa-instagram{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+.fa-instagram:hover{
+    color: #8f94fb;
+    cursor: pointer;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+.facebook{
+    margin-left: 65%;
+    position: absolute;
+    top: 81%;
+    display: inline-flexbox;
+}
+.fa-facebook{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+.fa-facebook:hover{
+    color: #8f94fb;
+    cursor: pointer;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}

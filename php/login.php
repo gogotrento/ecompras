@@ -56,12 +56,13 @@
     </div>
 </header>
 <body>
-    <section class="box-login">
+     <section class="box-login">
         <form action="" method="post">
             <div class="email">
                 <div class="logo">
                     <h1>Ecompras</h1>
                 </div>
+            <div class="email">
                 <label>E-mail</label>
                     <input type="text" class="input-email" $email>
             </div>
@@ -74,8 +75,7 @@
                 <button type="submit">Entrar</button>
             </div>
         </form>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </section><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
