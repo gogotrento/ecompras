@@ -1,72 +1,63 @@
-.main-cadastro{
-    font-family: Tahoma !important;
-    color: white;
-    padding: 20px;
-    width: 80%;
-    height: 30rem;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    background-attachment: fixed;
-    background-position: center;
+body{
+  background-color: #4c58c8 !important;
 }
-
- h1{
-    color: black;
- }
-
- input:hover{
-    background-color: white;
-    border-color: black;
- }
-
- input:active{
-    border-color: black;
+form{
+  text-align: center;
+}
+ 
+h1{
+    color: white;
  }
  
- .email{
+form>input{
     width: 55vw;
-    border-color: white;
-    background-color: white;
-    color: black;
-    background-attachment: fixed;
   }
 
-  .tel{
-    width: 55vw;
-    border-color: white;
-    background-color: white;
-    color: black;
-    background-attachment: fixed;
-  }
+input::placeholder{
+  color: black;
+}
 
-  .name{
-    width: 55vw;
-    border-color: white;
-    background-color: white;
-    color: black;
-    background-attachment: fixed;
-  }
-  
-  .senha{
-    width: 55vw;
-    border-color: white;
-    background-color: white;
-    color: black;
-    background-attachment: fixed;
-  }
-  
-  .senha2{
-      width: 55vw;
-      border-color: white;
-      background-color: white;
-      color: black;
-      background-attachment: fixed;
-  }
-  
-  input::placeholder {
-    color: black;
-  }
+.fa-user{
+  font-size: 20px;
+  color: white;
+}
+.fa-user:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
 
+.fa-envelope{
+  font-size: 20px;
+  color: white;
+}
+.fa-envelope:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
+.fa-phone{
+  font-size: 20px;
+  color: white;
+}
+.fa-phone:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
+.fa-lock{
+  font-size: 20px;
+  color: white;
+}
+.fa-lock:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
+.fa-unlock{
+  font-size: 20px;
+  color: white;
+}
+.fa-unlock:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
   .erro {
     display: block;
     margin-top: 15px;

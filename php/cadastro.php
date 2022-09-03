@@ -8,8 +8,6 @@ require('db/conexao.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/cadastro.css">
     <script src="../js/React.jsx"></script>
@@ -76,7 +74,7 @@ require('db/conexao.php');
         <input type="password" class="senha" name="senha" placeholder="Digite sua senha">
         <span class="erro"></span>
 
-        <img class="password2-image" src="https://cdn-icons-png.flaticon.com/512/6357/6357126.png" height="30rem" width="35vw">
+        <i class="fa-solid fa-unlock"></i>
         <input type="password" class="senha2" name="senha2" placeholder="Digite sua senha novamente">
         <span class="erro"></span>
 
@@ -106,19 +104,11 @@ require('db/conexao.php');
         echo"<b style='color:red'>Campo nome Inválido!</b>";
         exit();
     }
-    
-    if ($nome==null){
-        echo"Preencha Esse Campo!";
-        exit();
 
     if ($email==""){
         echo "<b style='color:red'>Campo email Inválido!</b>";
         exit();
     }
-    
-    if ($email==null){
-        echo "Preencha este campo!";
-        exit();
 
     if ($tel=="" || $tel==null){
         echo "<b style='color:red'>Campo email Inválido!</b>";
