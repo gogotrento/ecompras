@@ -1,0 +1,88 @@
+body{
+  background-color: #4c58c8 !important;
+}
+form{
+  text-align: center;
+}
+ 
+h1{
+    color: white;
+ }
+ 
+form>input{
+    width: 55vw;
+  }
+
+input::placeholder{
+  color: black;
+}
+
+.fa-user{
+  font-size: 20px;
+  color: white;
+}
+.fa-user:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
+
+.fa-envelope{
+  font-size: 20px;
+  color: white;
+}
+.fa-envelope:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
+.fa-phone{
+  font-size: 20px;
+  color: white;
+}
+.fa-phone:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
+.fa-lock{
+  font-size: 20px;
+  color: white;
+}
+.fa-lock:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
+.fa-unlock{
+  font-size: 20px;
+  color: white;
+}
+.fa-unlock:hover{
+  transition-duration: 1s;
+  color: #8f94fb;
+}
+  .erro {
+    display: block;
+    margin-top: 15px;
+    color: red;
+  }
+    
+  input.invalido {
+    width: 65vw;
+    border-color: red;
+    background-color: white;
+    color: black;
+    background-attachment: fixed;
+    border: 1px solid red;
+    border-radius: 5px;
+  }
+  .configdiv {border: 1px solid #DDDDDD;
+    margin-right: 28px;
+    margin-bottom: 25px;
+    padding: 10px;}
+
+    .titulo-form{
+        font-size: 45px;
+        color: white;
+        font-family: 'Quicksand' sans-serif;
+        text-align: center;
+        margin-top: 150px;
+    
+    }

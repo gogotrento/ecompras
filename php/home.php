@@ -59,22 +59,26 @@
         <h1>
             Selecione em base no que deseja
         </h1>
-        <div class="box-1">
-            <h1>Economia</h1>
-            <a class="fa-solid fa-piggy-bank" href="#" data-aos="fade-right"></a>
-            <p>Se você quer economizar sua melhor escolha é aqui, mas você poderá perder qualidade no seus produtos</p>
-        </div>
-        <div class="box-2">
-            <h1>Tempo</h1>
-            <a class="fa-solid fa-clock" href="#" data-aos="fade-right"></a>
-            <p>Se deseja que sua compra chegue o mais rápido possivel, essa é a melhor opção possível!</p>
-        </div>
-        <div class="box-3">
-            <h1>Qualidade</h1>
-            <a class="fa-solid fa-circle-check" href="#" data-aos="fade-right"></a>
-            <p>Se você deseja itens de qualidades, essa com certeza é a melhor opção para você</p>
+        <div class="container">
+            <div class="row text-center">    
+                <div class="box-1 card bg-white rounded p-4 me-1 mt-3 col-sm">
+                    <h1>Economia</h1>
+                    <a class="fa-solid fa-piggy-bank" href="cadastro.php" data-aos="fade-right"></a>
+                    <p>Se você quer economizar sua melhor escolha é aqui, mas você poderá perder qualidade no seus produtos</p>
+                </div>
+                <div class="box-2 card bg-white rounded p-4 me-1 mt-3 col-sm">
+                    <h1>Tempo</h1>
+                    <a class="fa-solid fa-clock" href="cadastro.php" data-aos="fade-right"></a>
+                    <p>Se deseja que sua compra chegue o mais rápido possivel, essa é a melhor opção possível!</p>
+                </div>
+                <div class="box-3 card bg-white rounded p-4 me-1 mt-3 col-sm">
+                    <h1>Qualidade</h1>
+                    <a class="fa-solid fa-circle-check" href="cadastro.php" data-aos="fade-right"></a>
+                    <p>Se você deseja itens de qualidades, essa com certeza é a melhor opção para você</p>
 
-        </div>
+                </div>
+            </div>
+        </div>    
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

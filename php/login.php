@@ -38,7 +38,7 @@
                     <a href="" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">Login</a>
                     <ul class="dropdown-menu">
                         <li><a href="#" class="dropdown-item">Já tenho conta</a></li>
-                        <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
+                        <li><a class="dropdown-item" href="cadastro.php">Cadastre-se</a></li>
                         <li><a class="dropdown-item" href="#">Esquece a senha?</a></li>
                     </ul>
                 </div>
@@ -56,27 +56,35 @@
     </div>
 </header>
 <body>
-    <section class="box-login">
-        <form action="" method="post">
-            <div class="email">
-                <div class="logo">
-                    <h1>Ecompras</h1>
+    <h1 class="titulo">
+        Ecompras
+    </h1>
+     <div class="container">
+        <div class="text-center">
+            <form method="post">
+            <div class="form-group">
+                <label class="col-md-3"></label>
+                <div class="col-md-6 offset-md-3">
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu email" class="form-control">
                 </div>
-            <div class="email">
-                <label>E-mail</label>
-                    <input type="text" class="input-email">
             </div>
-            <div class="senha">
-                <label>Senha</label>
-                <input type="password" class="senha">
+            <div class="form-group">
+                <label class="col-md-3"></label>
+                <div class="col-md-6 offset-md-3">
+                    <input type="password" name="senha" id="senha" class="form-control" placeholder="Insira sua senha">
+                </div>
             </div>
-            
-            <div class="button">
-                <button type="submit">Entrar</button>
+            <div class="form-group">
+                <label for="button-cadastro" class="col-md-4"></label>
+                <div class="col-md-6 offset-md-3">
+                    <button id="button-cadastro" class="btn btn-success">Acessar</button>
+                    <a href="cadastro.php"><button class="btn btn-inverse" id="button-login">Não possui uma conta?</button></a>
+                </div>
             </div>
-        </form>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        </div>
+     </div>
+</form>
+    </section><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>

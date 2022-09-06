@@ -1,5 +1,18 @@
 /* Botar sempre a tag !important por causa do bootstrap*/
-* {
-    padding: 0px !important;
-    margin: 0px !important;
+.--bs-primary{
+    color:#8f94fb;
+}
+.btn-success{
+    background-color: #8f94fb !important;
+    color: white !important;
+    
+}
+
+.titulo{
+    font-size: 45px;
+    color: white;
+    font-family: 'Quicksand' sans-serif;
+    text-align: center;
+    margin-top: 100px;
+
 }
