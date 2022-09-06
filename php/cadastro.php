@@ -10,6 +10,13 @@ require('db/conexao.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    </style>
+    <title>ecompras</title>
     <script src="../js/React.jsx"></script>
     <script src="https://kit.fontawesome.com/dc9a30c3ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -54,31 +61,60 @@ require('db/conexao.php');
 ?>
 
 <body>
-    <div class="main-cadastro">
-    <form method="post">
-        <br>
-        <h1>Cadastro</h1>
-        <i class="fa-solid fa-user"></i>
-        <input type="text" class="name" name="nome" placeholder="Digite seu nome">
-        <span class="erro"></span>
+    <div class="container">
+        <div class="row">
+            <form method="post"></form>    
+            <h1 class="titulo-form">
+                Ecompras
+            </h1>
 
-        <i class="fa-solid fa-envelope"></i>
-        <input type="email" class="email" name="email" placeholder="Digite seu email">
-        <span class="erro"></span>
+            <div class="form-group">
+                <label class="col-md-3"></label>
+                <div class="col-md-6 offset-md-3">
+                    <input type="text" id="nome" placeholder="Insira seu nome completo" class="form-control" required>
+                </div>
+            </div>
+        
+            <div class="form-group">
+            <label class="col-md-3" for="email"></label>  
+            <div class="col-md-6 offset-md-3">
+            <input id="email" name="email" type="email" placeholder="Insira seu email" class="form-control">
+                
+            </div>
+            </div>
 
-        <i class="fa-solid fa-phone"></i>
-        <input type="tel" class="tel" name="tel" placeholder="Digite seu número com ddd" data-mask="(00) 0000-0000">
-        <span class="erro"></span>
+            <div class="form-group">
+            <label class="col-md-3" for="celular"></label>  
+            <div class="col-md-6 offset-md-3">
+            <input id="celular" name="celular" type="int" placeholder="Numero do celular" class="form-control">
+                
+            </div>
+            </div>
+            <div class="form-group">
+            <label class="col-md-3" for="senha"></label>
+            <div class="col-md-6 offset-md-3">
+                <input id="senha" name="senha" type="password" placeholder="Insira sua senha" class="form-control">
+                
+            </div>
+            </div>
 
-        <i class="fa-solid fa-lock"></i>
-        <input type="password" class="senha" name="senha" placeholder="Digite sua senha">
-        <span class="erro"></span>
+            <div class="form-group">
+            <label class="col-md-3" for="senha2"></label>
+            <div class="col-md-6 offset-md-3">
+                <input id="senha2" name="senha2" type="password" placeholder="Confirme sua senha" class="form-control">
+                
+            </div>
+            </div>
 
-        <i class="fa-solid fa-unlock"></i>
-        <input type="password" class="senha2" name="senha2" placeholder="Digite sua senha novamente">
-        <span class="erro"></span>
-
-        <br><button type="submit" name="salvar">Cadastrar</button><br><br>
+            <div class="form-group">
+            <label class="col-md-3" for="button-cadastro"></label>
+            <div class="row text-center col-md-6 offset-md-3 mt-2">
+                <button id="button-cadastro" name="button-cadastro" class="btn btn-success" type="submit">Cadastre-se</button>
+               <a href="../php/login.php"> <button id="button-login" name="button-login" class="btn btn-inverse">Já tenho uma conta</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
 
         <?php
 
@@ -90,11 +126,11 @@ require('db/conexao.php');
         return $dado;
     }
 
-    if (isset($_POST['salvar'])&& isset($_POST['nome'])&& isset($_POST['email'])&& isset($_POST['tel']) && isset($_POST['senha'])){
+    if (isset($_POST['salvar'])&& isset($_POST['nome'])&& isset($_POST['email'])&& isset($_POST['celular']) && isset($_POST['senha'])){
         
         $nome = clearPost($_POST['nome']);
         $email = clearPost($_POST['email']);
-        $tel = $_POST['tel'];
+        $celular = $_POST['celular'];
         $senha = $_POST['senha'];
         $senha2 = $_POST['senha2'];
 
@@ -127,6 +163,11 @@ require('db/conexao.php');
     
     if (!preg_match("/^[a-zA-Z-' ]*$/",$nome)) {
         echo "<b style='color:red'>Permitido apenas letras no nome!</b>";
+        exit(); 
+    }
+
+    if (!preg_match("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z",$celular)) {
+        echo "<b style='color:red'>Insira seu numero corretamente</b>";
         exit(); 
     }
 
